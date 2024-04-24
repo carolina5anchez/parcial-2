@@ -89,21 +89,21 @@ def agregarPaciente(identificacion, nombre, edad, fecha, raza, eritrocitos, hemo
   
   
   lista=[]
-  #agrega los dato sdel paciente a la lista 
+   
   lista.append(identificacion)
   lista.append(nombre)
   lista.append(edad)
   lista.append(fecha)
 
-#llama la funcion para generar el codigo 
+
   codigo = codigoPerros(raza) 
   lista.append(codigo)
 
-#llama la funcion para generar el diagnostico
+
   diagnostico_paciente = diagnostico(eritrocitos,hemoglobina,VCM)
   lista.append(diagnostico_paciente)
 
-  #guarda la lista en el diccionario
+  
   diccionario[identificacion] = lista
   print(diccionario)
   
